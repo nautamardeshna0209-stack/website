@@ -1,0 +1,46 @@
+/* assets/styles.css */
+/* small custom tweaks */
+:root{
+  --brand:#0d6efd;
+  --muted:#6c757d;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding-top: 70px; /* give space for fixed navbar */
+  background: #f8f9fa;
+}
+
+.hero {
+  background: linear-gradient(90deg, rgba(13,110,253,0.08), rgba(13,110,253,0.02));
+  border-radius: .5rem;
+  padding: 3rem 1.5rem;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 14px rgba(13,110,253,0.12);
+}
+
+.card-compact { gap: .5rem; }
+
+.footer {
+  padding: 2rem 1rem;
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+}
+
+.form-section {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: .5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.02);
+}
+
+@media (max-width: 575.98px) {
+  .profile-pic { width: 120px; height: 120px; }
+}

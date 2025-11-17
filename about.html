@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — MyResume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV (same as index) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">MyResume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="application.html">Application</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="users.html">Users</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <div class="row g-4">
+      <div class="col-lg-4 text-center">
+        <img src="https://via.placeholder.com/300" alt="profile" class="profile-pic mb-3">
+        <h3>Your Name</h3>
+        <p class="text-muted">Frontend Developer • UI/UX • Accessibility enthusiast</p>
+        <a href="application.html" class="btn btn-outline-primary btn-sm">Hire / Collaborate</a>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="card form-section">
+          <div class="card-body">
+            <h4>About Me</h4>
+            <p>I build accessible and responsive web interfaces. I enjoy converting ideas into high-quality user experiences using HTML, CSS, JavaScript and modern frameworks.</p>
+
+            <h5 class="mt-4">Experience</h5>
+            <ul>
+              <li><strong>Frontend Engineer</strong>, Company A — 2022–Present (React & Bootstrap)</li>
+              <li><strong>Web Developer</strong>, Company B — 2020–2022 (Vanilla JS & PHP)</li>
+            </ul>
+
+            <h5 class="mt-4">Education</h5>
+            <p>B.Tech in Computer Science — Your University</p>
+
+            <h5 class="mt-4">Interests</h5>
+            <p>Open source, design systems, performance optimization.</p>
+
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <h6>Availability</h6>
+                <p class="mb-0 text-muted">Open to freelance & full-time</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <h6>Location</h6>
+                <p class="mb-0 text-muted">City, Country</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card p-3 h-100">
+                <h6>Contact</h6>
+                <p class="mb-0 text-muted">your.email@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-5">
+    <div class="container text-center">
+      <small class="text-muted">© <span id="year2"></span> MyResume</small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

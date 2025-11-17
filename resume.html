@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin - Resumes</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/admin.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm sticky-top">
+  <div class="container-fluid">
+    <button id="sidebarToggle" class="btn btn-outline-primary btn-sm me-2">
+      ☰
+    </button>
+    <a class="navbar-brand fw-bold" href="dashboard.html">Admin Panel</a>
+    <div class="ms-auto">
+      <a href="../index.html" class="btn btn-outline-secondary btn-sm">Client View</a>
+    </div>
+  </div>
+</nav>
+
+<div class="sidebar">
+  <div class="p-3 border-bottom">
+    <span class="brand">MyResume Admin</span>
+  </div>
+  <ul class="nav flex-column p-2">
+    <li class="nav-item"><a class="nav-link active" href="dashboard.html"><i class="bi bi-speedometer2 me-2"></i><span>Dashboard</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="resume.html"><i class="bi bi-file-earmark-person me-2"></i><span>Resumes</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="application.html"><i class="bi bi-journal-text me-2"></i><span>Applications</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="users.html"><i class="bi bi-people me-2"></i><span>Users</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="settings.html"><i class="bi bi-gear me-2"></i><span>Settings</span></a></li>
+  </ul>
+</div>
+
+  <div class="main-content">
+    <h3 class="mb-4">Resumes Management</h3>
+    <table class="table table-hover bg-white shadow-sm">
+      <thead class="table-light">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Position</th>
+          <th>Date</th>
+          <th>Resume</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>Alice Johnson</td><td>alice@example.com</td><td>Frontend</td><td>2025-11-10</td>
+          <td><a href="#" class="btn btn-sm btn-outline-primary">View PDF</a></td>
+          <td><button class="btn btn-sm btn-danger delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>2</td><td>Bob Kumar</td><td>bob@example.com</td><td>Fullstack</td><td>2025-11-09</td>
+          <td><a href="#" class="btn btn-sm btn-outline-primary">View PDF</a></td>
+          <td><button class="btn btn-sm btn-danger delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/admin.js"></script>
+</body>
+</html>
